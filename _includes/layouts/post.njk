@@ -20,7 +20,7 @@ layout: layouts/base.njk
     <div class="mb-3">
       {% for tag in tags | filterTagList %}
       {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <a href="{{ tagUrl }}" class="badge bg-secondary me-2">{{ tag }}</a>
+      <a href="{{ tagUrl }}" class="badge me-2" style="{{ tag | getTagStyle }}">{{ tag }}</a>
       {% endfor %}
     </div>
     {% endif %}

@@ -16,7 +16,7 @@
   {% if post.data.tags.length %}
   <div class="card-footer bg-transparent">
     {% for tag in post.data.tags %}
-    <span class="badge bg-secondary me-2">{{ tag }}</span>
+    <span class="badge me-2" style="{{ tag | getTagStyle }}">{{ tag }}</span>
     {% endfor %}
   </div>
   {% endif %}
