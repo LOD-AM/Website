@@ -1,8 +1,17 @@
-<h1>Tags</h1>
-
-<ul>
-{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-lg-8">
+			<h1 class="display-4 mb-4">Tags</h1>
+			<p class="lead mb-4">Browse posts by category</p>
+			
+			<div class="d-flex flex-wrap gap-2">
+			{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
+				{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+				<a href="{{ tagUrl }}" class="btn btn-outline-primary">
+					{{ tag }} <span class="badge bg-primary ms-1">{{ collections[tag] | length }}</span>
+				</a>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
