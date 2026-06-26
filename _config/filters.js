@@ -1,6 +1,27 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
+	// Date filter for formatting dates with a format string
+	// Usage: {{ dateObj | date("yyyy") }} or {{ "now" | date("yyyy-MM-dd") }}
+	eleventyConfig.addFilter("date", (dateObj, format, zone) => {
+		let dt;
+		if (typeof dateObj === "string" && dateObj === "now") {
+			dt = DateTime.now();
+		} else if (dateObj instanceof Date) {
+			dt = DateTime.fromJSDate(dateObj);
+		} else if (typeof dateObj === "string") {
+			dt = DateTime.fromISO(dateObj);
+		} else {
+			dt = DateTime.fromJSDate(dateObj);
+		}
+		
+		if (zone) {
+			dt = dt.setZone(zone);
+		}
+		
+		return dt.toFormat(format || "yyyy-MM-dd");
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
