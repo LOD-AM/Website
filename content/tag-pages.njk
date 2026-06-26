@@ -1,19 +1,16 @@
 ---
-const pagination = {
-	data: "collections",
-	size: 1,
-	alias: "tag",
-	filter: ["all", "posts"],
-};
+pagination:
+  data: "collections"
+  size: 1
+  alias: "tag"
+  filter:
+    - "all"
+    - "posts"
 
-const eleventyExcludeFromCollections = true;
+eleventyExcludeFromCollections: true
 
-const eleventyComputed = {
-	title: "Tagged '{{ tag }}'",
-	permalink: function(data) {
-		return "/tags/" + this.slugify(data.tag) + "/";
-	}
-};
+eleventyComputed:
+  title: "Tagged '{{ tag }}'"
 ---
 <div class="container">
 	<div class="row justify-content-center">
