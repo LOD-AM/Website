@@ -24,7 +24,7 @@ const eleventyComputed = {
 			{% set postslist = collections[ tag ] %}
 			{% include "postslist.njk" %}
 			
-			<p class="mt-4"><a href="tags.njk" class="btn btn-outline-secondary">All tags</a></p>
+			<p class="mt-4"><a href="/tags/" class="btn btn-outline-secondary">All tags</a></p>
 		</div>
 	</div>
 </div>
