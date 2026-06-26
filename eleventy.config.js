@@ -27,8 +27,11 @@ export default async function(eleventyConfig) {
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
-	// Copy Bootstrap CSS and JS from node_modules
-	eleventyConfig.addPassthroughCopy("node_modules/bootstrap/dist/**/*.{css,js}");
+	// Copy Bootstrap CSS and JS to clean paths
+	eleventyConfig.addPassthroughCopy({
+		"node_modules/bootstrap/dist/css/bootstrap.min.css": "/css/bootstrap.min.css",
+		"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js"
+	});
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
