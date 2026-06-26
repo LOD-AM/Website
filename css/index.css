@@ -2,7 +2,7 @@
 
 :root {
 	/* Primary Colors */
-	--lodam-terracotta: #E2725B;
+	--lodam-terracotta: #CB6D51;
 	--lodam-ochre: #CC8B32;
 	--lodam-malachite: #3D9970;
 	--lodam-sage: #8A9B68;
@@ -208,28 +208,28 @@ code[class*="language-"] {
 /* ===== LOD-AM Bootstrap Button Overrides - Dark Theme ===== */
 /* Must load AFTER bootstrap.min.css to take effect */
 
-/* Primary buttons - Terracotta (#E2725B) */
+/* Primary buttons - Terracotta (#CB6D51) */
 .btn-primary {
-  --bs-btn-bg: #E2725B;
-  --bs-btn-border-color: #E2725B;
+  --bs-btn-bg: #CB6D51;
+  --bs-btn-border-color: #CB6D51;
   --bs-btn-hover-bg: #c85f4a;
   --bs-btn-hover-border-color: #c15845;
   --bs-btn-box-shadow: 0 0 0 0.25rem rgba(226, 114, 91, 0.3);
   --bs-btn-active-bg: #b14f3f;
   --bs-btn-active-border-color: #a94a3a;
   --bs-btn-active-shadow: 0 0 0 0.25rem rgba(226, 114, 91, 0.3);
-  --bs-btn-disabled-bg: #E2725B;
-  --bs-btn-disabled-border-color: #E2725B;
+  --bs-btn-disabled-bg: #CB6D51;
+  --bs-btn-disabled-border-color: #CB6D51;
   color: #F5F0E6;
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #E2725B;
-  --bs-btn-border-color: #E2725B;
-  --bs-btn-hover-bg: #E2725B;
-  --bs-btn-hover-border-color: #E2725B;
+  --bs-btn-color: #CB6D51;
+  --bs-btn-border-color: #CB6D51;
+  --bs-btn-hover-bg: #CB6D51;
+  --bs-btn-hover-border-color: #CB6D51;
   --bs-btn-box-shadow: 0 0 0 0.25rem rgba(226, 114, 91, 0.3);
-  color: #E2725B;
+  color: #CB6D51;
 }
 
 .btn-outline-primary:hover {
@@ -434,7 +434,7 @@ code[class*="language-"] {
 
 /* Link buttons */
 .btn-link {
-  color: #E2725B;
+  color: #CB6D51;
 }
 
 .btn-link:hover {

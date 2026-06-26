@@ -2,7 +2,7 @@
 // Uses the LOD-AM color schema with variations to provide unique colors for each tag
 
 const lodAmColors = {
-  terracotta: '#E2725B',
+  terracotta: '#CB6D51',
   ochre: '#CC8B32',
   malachite: '#3D9970',
   sage: '#8A9B68',
