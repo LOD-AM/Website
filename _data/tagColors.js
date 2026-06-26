@@ -68,15 +68,24 @@ function hexToRgb(hex) {
   return { r, g, b };
 }
 
-function getTagBgClass(tag) {
+function getTagStyle(tag) {
   const color = getTagColor(tag);
   const colorObj = hexToRgb(color);
   const luminance = (0.299 * colorObj.r + 0.587 * colorObj.g + 0.114 * colorObj.b) / 255;
-  const textColor = luminance > 0.5 ? 'text-dark' : 'text-light';
+  const textColor = luminance > 0.5 ? '#3A2E22' : '#F5F0E6';
+  
   return {
-    style: 'background-color: ' + color + ';',
-    textClass: textColor
+    style: 'background-color: ' + color + '; color: ' + textColor + ';',
+    textColor: textColor
   };
 }
 
-export { getTagColor, getTagBgClass, customTagColors };
+function getTagBgClass(tag) {
+  const result = getTagStyle(tag);
+  return {
+    style: result.style,
+    textClass: result.textColor === '#F5F0E6' ? 'text-light' : 'text-dark'
+  };
+}
+
+export { getTagColor, getTagStyle, getTagBgClass, customTagColors };
