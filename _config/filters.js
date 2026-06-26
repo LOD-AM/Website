@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import { getTagColor, getTagStyle } from '../_data/tagColors.js';
 
 export default function(eleventyConfig) {
 	// Date filter for formatting dates with a format string
@@ -63,8 +64,6 @@ export default function(eleventyConfig) {
 	);
 
 	// Get tag color for individual tag badges
-	import { getTagColor, getTagStyle } from '../_data/tagColors.js';
-	
 	eleventyConfig.addFilter("getTagColor", (tag) => getTagColor(tag));
 	eleventyConfig.addFilter("getTagStyle", (tag) => getTagStyle(tag).style);
 }
