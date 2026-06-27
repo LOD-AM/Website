@@ -19,7 +19,7 @@ eleventyNavigation:
 					<h4 class="mb-0">Categories</h4>
 				</div>
 				<div class="card-body">
-					{% for tag in collections.tagList | filterTagList %}
+					{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
 					<a href="/tags/{{ tag | slugify }}/" class="btn btn-sm btn-outline-secondary m-1">
 						#{{ tag }} ({{ collections[tag] | length }})
 					</a>
