@@ -56,7 +56,8 @@ export default function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "posts"].indexOf(tag) === -1);
+		const collectionTags = ["all", "posts", "blog", "find", "site", "culture"];
+		return (tags || []).filter(tag => !collectionTags.includes(tag));
 	});
 
 	eleventyConfig.addFilter("sortAlphabetically", strings =>
