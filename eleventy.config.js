@@ -124,6 +124,10 @@ export default async function(eleventyConfig) {
 		// selector: "h1,h2,h3,h4,h5,h6", // default
 	});
 
+	eleventyConfig.addCollection("blog", function(collectionApi) {
+	return collectionApi.getFilteredByGlob("content/blog/*.md");
+});
+
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
