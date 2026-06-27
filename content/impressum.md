@@ -12,10 +12,10 @@
 					<h3>Responsible for content according to &sect; 55 para. 2 RStV</h3>
 					
 					<p class="card-text">
-						<strong>[YOUR NAME]</strong><br>
-						[YOUR STREET ADDRESS]<br>
-						[YOUR POSTAL CODE AND CITY]<br>
-						[YOUR COUNTRY]
+						<strong>Fabian Fricke</strong><br>
+						Geranienstraße 6<br>
+						12203 Berlin<br>
+						Germany
 					</p>
 					
 					<p class="card-text">

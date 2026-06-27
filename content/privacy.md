@@ -14,13 +14,13 @@
 						The controller responsible for the processing of personal data on this website is:
 					</p>
 					<p class="card-text">
-						<strong>[YOUR NAME]</strong><br>
-						[YOUR STREET ADDRESS]<br>
-						[YOUR POSTAL CODE AND CITY]<br>
-						[YOUR COUNTRY]
+						<strong>Fabian Fricke</strong><br>
+						Geranienstraße 6<br>
+						12203 Berlin<br>
+						Germany
 					</p>
 					<p class="card-text">
-						<strong>Email:</strong> <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
+						<strong>Email:</strong> <a href="mailto:info@lod-am.net">info@lod-am.net</a>
 					</p>
 					
 					<h3>Legal Basis</h3>
