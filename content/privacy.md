@@ -1,7 +1,4 @@
 ---
-eleventyNavigation:
-  key: "Privacy Policy"
-  order: 101
 ---
 <div class="container">
 	<div class="row justify-content-center">
