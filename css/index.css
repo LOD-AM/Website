@@ -96,8 +96,8 @@ body {
 }
 
 .btn-secondary:hover {
-	background-color: #2f8a61;
-	border-color: #2f8a61;
+	background-color: #32825d;  /* Matches --bs-btn-hover-bg */
+	border-color: #2e7855;     /* Matches --bs-btn-hover-border-color */
 	box-shadow: 0 4px 12px rgba(61, 153, 112, 0.4);
 }
 
