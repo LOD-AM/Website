@@ -5,7 +5,7 @@ eleventyNavigation:
 
 numberOfLatestPostsToShow: 3
 ---
-{% set postsCount = collections.posts | length %}
+{% set postsCount = collections.blog | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
 <div class="container">
@@ -13,7 +13,7 @@ numberOfLatestPostsToShow: 3
 		<div class="col-lg-8">
 			<h1 class="display-4 mb-4">Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 			
-			{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+			{% set postslist = collections.blog | head(-1 * numberOfLatestPostsToShow) %}
 			{% set postslistCounter = postsCount %}
 			{% include "postslist.njk" %}
 			
@@ -34,14 +34,14 @@ numberOfLatestPostsToShow: 3
 				</div>
 			</div>
 			
-			{% if collections.posts | length > 0 %}
+			{% if collections.blog | length > 0 %}
 			<div class="card">
 				<div class="card-header">
 					<h4 class="mb-0">Recent Posts</h4>
 				</div>
 				<div class="card-body">
 					<div class="list-group">
-						{% for post in collections.posts | reverse | slice(0, 5) %}
+						{% for post in collections.blog | reverse | slice(0, 5) %}
 						<a href="{{ post.url }}" class="list-group-item list-group-item-action">
 							<div class="d-flex w-100 justify-content-between">
 								<h6 class="mb-1">{{ post.data.title }}</h6>
