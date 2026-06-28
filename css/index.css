@@ -501,3 +501,80 @@ code[class*="language-"] {
     padding-top: 1.5rem;
   }
 }
+
+
+/* ===== Giscus Theme Customization - LOD-AM Color Schema ===== */
+/* Customize Giscus to match LOD-AM's earthy color palette */
+
+/* Main container background */
+.giscus {
+  --giscus-color-bg: #3A2E22 !important; /* LOD-AM deep umber */
+  --giscus-color-bg-secondary: #2A241D !important; /* LOD-AM charcoal */
+  --giscus-color-bg-hover: #4A3F32 !important; /* Slightly lighter */
+}
+
+/* Text colors */
+.giscus {
+  --giscus-color-text: #F5F0E6 !important; /* LOD-AM chalk white */
+  --giscus-color-text-secondary: rgba(245, 240, 230, 0.7) !important;
+  --giscus-color-text-muted: rgba(245, 240, 230, 0.5) !important;
+}
+
+/* Primary colors (buttons, links) - Terracotta */
+.giscus {
+  --giscus-color-primary: #CB6D51 !important; /* LOD-AM terracotta */
+  --giscus-color-primary-hover: #B84A2F !important;
+  --giscus-color-primary-text: #3A2E22 !important;
+}
+
+/* Border colors */
+.giscus {
+  --giscus-color-border: rgba(245, 240, 230, 0.15) !important;
+  --giscus-color-border-muted: rgba(245, 240, 230, 0.08) !important;
+}
+
+/* Input field styling */
+.giscus {
+  --giscus-color-input-bg: #2A241D !important; /* LOD-AM charcoal */
+  --giscus-color-input-text: #F5F0E6 !important;
+  --giscus-color-input-border: rgba(245, 240, 230, 0.3) !important;
+  --giscus-color-input-border-focus: #CB6D51 !important; /* Terracotta focus */
+}
+
+/* Button styling */
+.giscus {
+  --giscus-color-btn-bg: #CB6D51 !important; /* Terracotta */
+  --giscus-color-btn-bg-hover: #B84A2F !important;
+  --giscus-color-btn-text: #3A2E22 !important;
+}
+
+/* Reaction buttons */
+.giscus {
+  --giscus-color-reaction-bg: #2A241D !important;
+  --giscus-color-reaction-bg-hover: #3A2E22 !important;
+  --giscus-color-reaction-text: #F5F0E6 !important;
+}
+
+/* Code blocks in comments */
+.giscus {
+  --giscus-color-code-bg: #1e1a14 !important;
+  --giscus-color-code-text: #F5F0E6 !important;
+  --giscus-color-code-border: rgba(245, 240, 230, 0.15) !important;
+}
+
+/* Link colors */
+.giscus {
+  --giscus-color-link: #CB6D51 !important; /* Terracotta */
+  --giscus-color-link-hover: #F09B86 !important;
+}
+
+/* Ensure proper spacing and sizing */
+.giscus-frame {
+  background-color: #3A2E22 !important;
+  border: none !important;
+  border-radius: 0.375rem !important;
+}
+
+.giscus iframe {
+  background: transparent !important;
+}
