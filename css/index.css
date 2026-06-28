@@ -467,3 +467,37 @@ code[class*="language-"] {
 .bg-charcoal { background-color: var(--lodam-charcoal); color: var(--lodam-chalk-white); }
 .bg-burnt-sienna { background-color: var(--lodam-burnt-sienna); color: var(--lodam-chalk-white); }
 .bg-sunset-orange { background-color: var(--lodam-sunset-orange); color: var(--lodam-deep-umber); }
+
+
+/* ===== Giscus Comments Styling - Dark Theme ===== */
+.giscus {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(245, 240, 230, 0.1);
+}
+
+/* Giscus frame styling for dark theme */
+.giscus-frame {
+  background-color: var(--lodam-deep-umber) !important;
+  border: none !important;
+  border-radius: 0.375rem !important;
+}
+
+/* Ensure Giscus matches our dark theme */
+[data-giscus-theme="dark"] {
+  --giscus-color-primary: var(--lodam-terracotta);
+  --giscus-color-text: var(--lodam-chalk-white);
+  --giscus-color-bg: var(--lodam-deep-umber);
+  --giscus-color-bg-secondary: var(--lodam-charcoal);
+  --giscus-color-border: rgba(245, 240, 230, 0.15);
+  --giscus-color-input-bg: var(--lodam-charcoal);
+  --giscus-color-input-text: var(--lodam-chalk-white);
+  --giscus-color-input-border: rgba(245, 240, 230, 0.3);
+}
+
+/* Responsive adjustments for Giscus */
+@media (max-width: 768px) {
+  .giscus {
+    padding-top: 1.5rem;
+  }
+}
