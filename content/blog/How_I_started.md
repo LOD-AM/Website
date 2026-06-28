@@ -1,7 +1,7 @@
 ---
 title: How I started
 description: So, how we got to the point to see this website? I'll tell you.
-date: 2026-06-23
+date: 2026-06-27
 tags: ["concept"]
 ---
 
