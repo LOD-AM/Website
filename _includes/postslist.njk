@@ -4,10 +4,8 @@
     <h3 class="card-title">
       <a href="{{ post.url }}" class="text-decoration-none">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     </h3>
-    <p class="card-text text-muted mb-0">
-      <small>
-        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-      </small>
+    <p class="card-text mb-0">
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
     </p>
     {% if post.data.excerpt or post.data.description %}
     <p class="card-text mt-2">{{ post.data.excerpt or post.data.description | truncate(200) }}</p>
