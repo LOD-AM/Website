@@ -16,6 +16,18 @@ numberOfLatestPostsToShow: 3
 
 <div class="container">
 	<div class="row mb-5">
+		<div class="col-lg-4">
+			<div class="card mb-4">
+				<div class="card-header">
+					<h4 class="mb-0">About</h4>
+				</div>
+				<div class="card-body">
+					<p>{{ metadata.description or metadata.subtitle }}</p>
+					<a href="/about/" class="btn btn-primary">Learn More</a>
+				</div>
+			</div>
+		</div>
+		
 		<div class="col-lg-8">
 			<h1 class="display-4 mb-4">Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 			
@@ -27,18 +39,6 @@ numberOfLatestPostsToShow: 3
 			{% if morePosts > 0 %}
 			<p class="mt-4">{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in the <a href="/blog/" class="btn btn-outline-primary">blog-archive</a></p>
 			{% endif %}
-		</div>
-		
-		<div class="col-lg-4">
-			<div class="card mb-4">
-				<div class="card-header">
-					<h4 class="mb-0">About</h4>
-				</div>
-				<div class="card-body">
-					<p>{{ metadata.description or metadata.subtitle }}</p>
-					<a href="/about/" class="btn btn-primary">Learn More</a>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
