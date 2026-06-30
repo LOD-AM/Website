@@ -16,11 +16,11 @@ For the archaeological core, **CIDOC CRM** was the obvious choice. It’s the in
 
 CIDOC CRM gives me interoperability with museums, archives, and other cultural heritage systems. And since it’s an ISO standard, I know it’s not going anywhere.
 
-### FRBRoo: For the Literature
+### FABIO: For the Literature
 
-Archaeology relies heavily on literature—often old, often without DOIs. I needed a way to reference papers, reports, and books in a structured way. Enter **FRBRoo**, an extension of CIDOC CRM specifically for bibliographic data.
+Archaeology relies heavily on literature—often old, often without DOIs. I needed a way to reference papers, reports, and books in a structured way. **FABIO**, is allined with CIDOC CRM specifically for bibliographic data, so it's a very straight forward way to go.
 
-FRBRoo lets me model works, expressions, manifestations, and items in a way that’s compatible with both libraries and museums. And crucially, it handles **legacy literature without DOIs** just fine. I can use local identifiers, author names, titles, dates—whatever I have. It’s not perfect, but it’s flexible enough for my needs.
+FABIO lets me model works, expressions, manifestations, and items in a way that’s compatible with both libraries and museums. And crucially, it handles **legacy literature without DOIs** just fine. I can use local identifiers, author names, titles, dates—whatever I have. It’s not perfect, but it’s flexible enough for my needs.
 
 ### Allotrope Framework: For the Science
 
