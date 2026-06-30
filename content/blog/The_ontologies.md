@@ -45,4 +45,10 @@ So here’s the stack:
 
 Together, they give me a solid foundation that’s interoperable with the wider cultural heritage and scientific communities. And since all three are FOSS-friendly, they fit perfectly with the rest of my setup.
 
+Curious for the itty-bitty details?
+
+<img src="https://opengraph.githubassets.com/1/LOD-AM/ontologies" alt="LOD-AM/ontologies" width="800" />
+
+[View LOD-AM/ontologies on GitHub →](https://github.com/LOD-AM/ontologies)
+
 As always, if you have thoughts, suggestions, or just want to nerd out about ontologies, you know where to find me: **info@lod-am.net** or (if you have a GitHub-Account) in a **comment** below.
